@@ -7,36 +7,73 @@
       <meta name="viewport" content="initial-scale=1">
       <link rel="stylesheet" href="../mycasa-src/css/furnace.min.css">
       <link rel="stylesheet" href="../mycasa-src/css/casa.css">
+	   
+	   <style>
+	   
+		   .casa-drone-instructions{display: none;}
+		   .casa-drone-instructions strong{font-weight:600;color:#000;}
+	   </style>
+	   
       <script type="text/javascript" src="../mycasa-src/js/furnace.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
+	   
+	  <script type="text/javascript" src="js/dji.js"></script>
 	  <script type="text/javascript" src="va.js"></script>  
-      <script type="text/javascript">
+	         <script type="text/javascript">
          /* page specific js */
+         
+		  $( document ).ready(function() {
 
-      </script>
-      <style type="text/css">
-         /* page specific css */
-         
-         
-         
-      </style>
+			  			   $("#elprating").on('input', function() {
+			   	   
+			   		if($(this).val()=="gelpa"){
+			   			 $("#gelpass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#gelpass").css("display","none");
+						 
+					 }
+			   			   		if($(this).val()=="gelpn"){
+			   			 $("#gelpnot").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#gelpnot").css("display","none");
+						 
+					 }
+							   
+							   			   		if($(this).val()=="elp6"){
+			   			 $("#elp6ass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#elp6ass").css("display","none");
+						 
+					 }
+						   
+				});
+			   });
+	   
+	   </script>
+		 
    </head>
    <body class="live-demo au-body au-grid">
+
       <main class="au-grid">
-        <div class="header">
+         <div class="header">
             <div class="container">
                <div class="row">
-               
-               
-               
                   <div class="logo au-body au-body--dark">
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
                   
-                  
-					 	                  	<div id="dropdown-menu">
+                  	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
 						<br />
@@ -47,30 +84,21 @@
                   
                   
                   </div>
-                  
-                  
-                  
-                  
-                  </div>
-                  
-                  
-                  
-                  
-                  
-               </div>
+               </div></div>
             </div>
-         </div> <div class="body"><div class="banner">
+         </div>
+         <div class="body">
+			<div class="banner">
 				<div class=container>
 					<div class="row">
-					 <div class="col-xs-12">
+					 <div class="col-md-12">
 				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
 				</div>
 				</div>
 			</div>
 		</div>
          <div class="container">
-			 <div class="row">
-		
+			
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-bob.html">myCASA</a></li>
@@ -85,13 +113,13 @@
                      </div>
                   </div>
                </div>
-               <header class="au-header" role="banner">
+            <header class="au-header" role="banner">
                   <h1 class="break desktop au-header-heading">English language proficiency</h1>
                   <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
                </header>
-			 			 <div class="row">
-                     <div class="col-xs-12 col-md-12 col-lg-6">
-
+			 
+<div class="row">
+                     <div class="col-xs-12 col-md-12 col-lg-6"> 
 		
 <h2>Applicant details</h2>
 							  <br>
@@ -123,34 +151,23 @@
 					<p class="date-guidance">For example, 31 01 2020</p>	
 				</div>
 				 <br>
-				<p>Please choose one of the following english language proficiency ratings:</p>
-							  
-			<br>
-							  
-				<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="gelpa">
-						<span class="au-control-input__text casa-label-guidance">General english language proficiency assessment</span>
-				</label>
 				 
-				 <label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="gelpn">
-						<span class="au-control-input__text casa-label-guidance">General english language proficiency notice</span>
-				</label>
-			 
-			 <label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp4">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 4</span>
-				</label>
-							  
-			<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp5">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 5</span>
-				</label>
-							  
-			<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp6">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 6</span>
-				</label>
+				 
+				 				<div class="casa-section">	
+				<label for="" class="casa-label-guidance">Please select one of the following english language proficiency ratings</label>			  	  
+				<select id="elprating" class="au-select au-select--block">
+					<option value="0">Please select</option>						
+  					<option value="gelpa">General english language proficiency assessment</option>
+  					<option value="gelpn">General english language proficiency notice</option>
+  					<option value="elp4">Aviation english language proficiency level 4</option>
+  					<option value="elp5">Aviation english language proficiency level 5</option>	
+  					<option value="elp6">Aviation english language proficiency level 6</option>
+				</select>
+				</div>
+				 
+				 
+	  
+				
 				 
 				 				 
 				

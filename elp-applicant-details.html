@@ -25,42 +25,38 @@
          
 		  $( document ).ready(function() {
 
-			  			  $(".assessment-check").on('input', function() {
-
-				  
-				  if($("input:radio[name='elp']:checked").val()=="gelpa"){
-					  
-					  $("#gelpass").css("display","block");
-					  
-					  
-				  } else {
+			  			   $("#elprating").on('input', function() {
+			   	   
+			   		if($(this).val()=="gelpa"){
+			   			 $("#gelpass").css("display","block");
+						
+						
+			   		 } else {
 					  
 					  $("#gelpass").css("display","none");
-					  
-				  }
-							  
-							  				  if($("input:radio[name='elp']:checked").val()=="gelpn"){
-					  
-					  $("#gelpnot").css("display","block");
-					  
-					  
-				  } else {
+						 
+					 }
+			   			   		if($(this).val()=="gelpn"){
+			   			 $("#gelpnot").css("display","block");
+						
+						
+			   		 } else {
 					  
 					  $("#gelpnot").css("display","none");
-					  
-				  }
-							  							  				  if($("input:radio[name='elp']:checked").val()=="elp6"){
-					  
-					  $("#elp6ass").css("display","block");
-					  
-					  
-				  } else {
+						 
+					 }
+							   
+							   			   		if($(this).val()=="elp6"){
+			   			 $("#elp6ass").css("display","block");
+						
+						
+			   		 } else {
 					  
 					  $("#elp6ass").css("display","none");
-					  
-				  }
-				  
-			  });
+						 
+					 }
+						   
+				});
 			   });
 	   
 	   </script>
@@ -102,8 +98,7 @@
 			</div>
 		</div>
          <div class="container">
-			 <div class="row">
-			 <div class="col-lg-6 col-md-6 col-xs-12">
+
 			
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
@@ -116,7 +111,8 @@
                   <h1 class="break desktop au-header-heading">English language proficiency</h1>
                   <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
                </header>
-			 
+			 			                  <div class="row">
+                     <div class="col-xs-12 col-md-12 col-lg-6"> 
 
 		
 <h2>Applicant details</h2>
@@ -149,34 +145,23 @@
 					<p class="date-guidance">For example, 31 01 2020</p>	
 				</div>
 				 <br>
-				<p>Please choose one of the following english language proficiency ratings:</p>
-							  
-			<br>
-							  
-				<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="gelpa">
-						<span class="au-control-input__text casa-label-guidance">General english language proficiency assessment</span>
-				</label>
 				 
-				 <label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="gelpn">
-						<span class="au-control-input__text casa-label-guidance">General english language proficiency notice</span>
-				</label>
-			 
-			 <label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp4">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 4</span>
-				</label>
-							  
-			<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp5">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 5</span>
-				</label>
-							  
-			<label class="au-control-input casa-form-radio-selection">
-					 <input class="au-control-input__input assessment-check" type="radio"  name="elp" value="elp6">
-						<span class="au-control-input__text casa-label-guidance">Aviation english language proficiency level 6</span>
-				</label>
+				 
+				 				<div class="casa-section">	
+				<label for="" class="casa-label-guidance">Please select one of the following english language proficiency ratings</label>			  	  
+				<select id="elprating" class="au-select au-select--block">
+					<option value="0">Please select</option>						
+  					<option value="gelpa">General english language proficiency assessment</option>
+  					<option value="gelpn">General english language proficiency notice</option>
+  					<option value="elp4">Aviation english language proficiency level 4</option>
+  					<option value="elp5">Aviation english language proficiency level 5</option>	
+  					<option value="elp6">Aviation english language proficiency level 6</option>
+				</select>
+				</div>
+				 
+				 
+	  
+				
 				 
 				 				 
 				
