@@ -25,7 +25,7 @@
          
 		  $( document ).ready(function() {
 
-			  			   $("#elprating").on('input', function() {
+			 $("#elprating").on('input', function() {
 			   	   
 			   		if($(this).val()=="gelpa"){
 			   			 $("#gelpass").css("display","block");
@@ -36,7 +36,8 @@
 					  $("#gelpass").css("display","none");
 						 
 					 }
-			   			   		if($(this).val()=="gelpn"){
+			   		
+                    if($(this).val()=="gelpn"){
 			   			 $("#gelpnot").css("display","block");
 						
 						
@@ -46,7 +47,30 @@
 						 
 					 }
 							   
-							   			   		if($(this).val()=="elp6"){
+				    
+                  if($(this).val()=="elp4"){
+			   			 $("#elp4ass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#elp4ass").css("display","none");
+						 
+					 }
+                 
+                  if($(this).val()=="elp5"){
+			   			 $("#elp5ass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#elp5ass").css("display","none");
+						 
+					 }
+                 
+                 
+                 
+                    if($(this).val()=="elp6"){
 			   			 $("#elp6ass").css("display","block");
 						
 						
@@ -148,12 +172,17 @@
 				 
 				 
 				 				<div class="casa-section">	
-				<label for="" class="casa-label-guidance">Please select one of the following english language proficiency ratings</label>			  	  
+				<label for="" class="casa-label-guidance">Please select one of the following English language proficiency ratings</label>			  	  
 				<select id="elprating" class="au-select au-select--block">
 					<option value="0">Please select</option>						
-  					<option value="gelpa">General english language proficiency assessment</option>
-  					<option value="gelpn">General english language proficiency notice</option>
-  					<option value="elp6">Aviation english language proficiency level 6</option>
+
+  					<option value="gelpn">General English language proficiency notice</option>
+  					<option value="gelpa">General English language proficiency assessment</option>
+
+  					<option value="elp4">Aviation English language proficiency level 4</option>
+  					<option value="elp5">Aviation English language proficiency level 5</option>	
+  					<option value="elp6">Aviation English language proficiency level 6</option>
+
 				</select>
 				</div>
 				 
@@ -202,7 +231,7 @@
 				 
 				 				<div id="gelpnot" style="display:none;">
 					<br>				
-					<p>Please select at least one of following documents indicated below, that you have sighted as evidence that the student meets the general english language proficiency standards:</p>
+					<p>Please select at least one of following documents indicated below, that you have sighted as evidence that the student meets the general English language proficiency standards:</p>
 							  
 			<br>
 				
@@ -225,7 +254,7 @@ confirmation from employer, group certificates)</label>
 				 <br><br>
 				 				 <div class="au-control-input">
   <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Sighted evidence they have completed a CASA approved General English Language Training Course</label>
+  <label class="au-control-input__text">Sighted evidence they have completed a CASA approved General English language Training Course</label>
 </div>
 				 <br><br>
 					 <div class="au-control-input">
@@ -234,10 +263,97 @@ confirmation from employer, group certificates)</label>
 documentary evidence and includes details on how the applicant meets the education or work history standard.</label>
 </div>
 				 </div>
+                         
+                         
+                         
+                         
+                  <div id="elp4ass" style="display:none;">
+					<br>				
+					<p>Please ensure the student meets the following aviation English language proficiency level 5 assessment standards. English language proficiency level 5 are valid for three years only.</p>
+							  
+			<br>
+				
+				 				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Pronunciation</label>
+</div>
+				 <br><br>
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Grammar</label>
+</div>
+				 <br><br>
+				 				
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Fluency</label>
+</div>
+				 <br><br>
+					 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Comprehension</label>
+</div>
+		<br><br>				 
+				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Interaction</label>
+</div>
+				 </div>
+
+                         
+                         
+                         
+    <div id="elp5ass" style="display:none;">
+					<br>				
+					<p>Please ensure the student meets the following aviation English language proficiency level 5 assessment standards. English language proficiency level 5 are valid for six years only.</p>
+							  
+			<br>
+				
+				 				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Pronunciation</label>
+</div>
+				 <br><br>
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Grammar</label>
+</div>
+				 <br><br>
+				 				
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Fluency</label>
+</div>
+				 <br><br>
+					 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Comprehension</label>
+</div>
+		<br><br>				 
+				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Interaction</label>
+</div>
+				 </div>
+                      
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
 				 
 				 				<div id="elp6ass" style="display:none;">
 					<br>				
-					<p>Please ensure the student meets the following aviation english language proficiency level 6 assessment standards:</p>
+					<p>Please ensure the student meets the following aviation English language proficiency level 6 assessment standards:</p>
 							  
 			<br>
 				
