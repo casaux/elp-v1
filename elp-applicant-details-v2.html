@@ -25,7 +25,7 @@
          
 		  $( document ).ready(function() {
 
-			  			   $("#elprating").on('input', function() {
+			 $("#elprating").on('input', function() {
 			   	   
 			   		if($(this).val()=="gelpa"){
 			   			 $("#gelpass").css("display","block");
@@ -36,7 +36,8 @@
 					  $("#gelpass").css("display","none");
 						 
 					 }
-			   			   		if($(this).val()=="gelpn"){
+			   		
+                    if($(this).val()=="gelpn"){
 			   			 $("#gelpnot").css("display","block");
 						
 						
@@ -46,7 +47,30 @@
 						 
 					 }
 							   
-							   			   		if($(this).val()=="elp6"){
+				    
+                  if($(this).val()=="elp4"){
+			   			 $("#elp4ass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#elp4ass").css("display","none");
+						 
+					 }
+                 
+                  if($(this).val()=="elp5"){
+			   			 $("#elp5ass").css("display","block");
+						
+						
+			   		 } else {
+					  
+					  $("#elp5ass").css("display","none");
+						 
+					 }
+                 
+                 
+                 
+                    if($(this).val()=="elp6"){
 			   			 $("#elp6ass").css("display","block");
 						
 						
@@ -116,7 +140,7 @@
 
 		
 <h2>Applicant details</h2>
-							  <br>
+						 <br>
 							  			 					<div class="casa-section">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
@@ -145,7 +169,8 @@
                         
                     </fieldset>
                     </div>
-                         <br>
+<br>
+
 			 
 				<label for="model-name-version" class="casa-label-guidance">Applicant family name</label>	
 				<input class="au-text-input au-text-input--block" name="text-input-block1" id="text-input-block1" type="text" value="">
@@ -175,28 +200,29 @@
 				 <br>
 				 
 				 
-				 <div class="casa-section">	
-					<div class="au-callout">
-						 <h4>Please note</h4>
-                        <p><strong>The applicant will be issued Aviation English language proficiency level 6</strong></p>	 
-                     </div>
+				 				<div class="casa-section">	
+				<label for="" class="casa-label-guidance">Please select one of the following English language proficiency ratings</label>			  	  
+				<select id="elprating" class="au-select au-select--block">
+					<option value="0">Please select</option>						
+
+  					<option value="gelpn">General English language proficiency notice</option>
+  					<option value="gelpa">General English language proficiency assessment</option>
+
+  					<option value="elp4">Aviation English language proficiency level 4</option>
+  					<option value="elp5">Aviation English language proficiency level 5</option>	
+  					<option value="elp6">Aviation English language proficiency level 6</option>
+
+				</select>
 				</div>
 				 
-				 <p>Please ensure the student meets the following GELP assessment standards:
-							<ul>
-								<li>Pronunciation, ease of understanding</li>
-								<li>Grammatical structure and sentence patterns</li>
-								<li>Vocabulary and phraseologies</li>
-                                <li>Fluency, natural flow of speach, varied style for emphasis, appropriate marker usage</li>
-								<li>Comprehension accuracy and including comprehension of linguistic and cultural subtleties</li>
-								<li>Ease of interaction and appropriate response to verbal and non-verbal cues</li>
-							</ul>
-						</p>
-	  
-				<div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="ground-display" value="ground-display">
-                            <label class="au-control-input__text" for="ground-display">I assess that the applicant demonstrated each of these elements as expert standard, i.e. Level 6</label>
-                        </div>
+				 
+
+                
+                         
+
+                         
+                         
+                         
 				 
 				 				 
 				
@@ -271,6 +297,93 @@ confirmation from employer, group certificates)</label>
 documentary evidence and includes details on how the applicant meets the education or work history standard.</label>
 </div>
 				 </div>
+                         
+                         
+                         
+                         
+                  <div id="elp4ass" style="display:none;">
+					<br>				
+					<p>Please ensure the student meets the following aviation English language proficiency level 5 assessment standards. English language proficiency level 5 are valid for three years only.</p>
+							  
+			<br>
+				
+				 				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Pronunciation</label>
+</div>
+				 <br><br>
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Grammar</label>
+</div>
+				 <br><br>
+				 				
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Fluency</label>
+</div>
+				 <br><br>
+					 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Comprehension</label>
+</div>
+		<br><br>				 
+				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Interaction</label>
+</div>
+				 </div>
+
+                         
+                         
+                         
+    <div id="elp5ass" style="display:none;">
+					<br>				
+					<p>Please ensure the student meets the following aviation English language proficiency level 5 assessment standards. English language proficiency level 5 are valid for six years only.</p>
+							  
+			<br>
+				
+				 				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Pronunciation</label>
+</div>
+				 <br><br>
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Grammar</label>
+</div>
+				 <br><br>
+				 				
+				 				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Fluency</label>
+</div>
+				 <br><br>
+					 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Comprehension</label>
+</div>
+		<br><br>				 
+				 <div class="au-control-input">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+  <label class="au-control-input__text">Interaction</label>
+</div>
+				 </div>
+                      
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
 				 
 				 				<div id="elp6ass" style="display:none;">
 					<br>				
@@ -308,13 +421,103 @@ documentary evidence and includes details on how the applicant meets the educati
   <label class="au-control-input__text">Ease of interaction and appropriate response to verbal and non-verbal cues</label>
 </div>
 				 </div>
+						
+  
+                         
+    <p><strong>Pronunciation, ease of understanding</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-4">
+      <label class="au-control-input__text" for="pronunciation-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-5">
+      <label class="au-control-input__text" for="pronunciation-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-6">
+      <label class="au-control-input__text" for="pronunciation-6">Level 6</label>
+    </div>
+                         
+    <p><strong>Grammatical structure and sentence patterns</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-4">
+      <label class="au-control-input__text" for="grammatical-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-5">
+      <label class="au-control-input__text" for="grammatical-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-6">
+      <label class="au-control-input__text" for="grammatical-6">Level 6</label>
+    </div>
+                         
+    <p><strong>Appropriate vocabulary and phraseologies</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-4">
+      <label class="au-control-input__text" for="vocabulary-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-5">
+      <label class="au-control-input__text" for="vocabulary-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-6">
+      <label class="au-control-input__text" for="vocabulary-6">Level 6</label>
+    </div>
+                         
+    <p><strong>Fluency, natural flow of speach, varied style for emphasis, appropriate marker usage</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-4">
+      <label class="au-control-input__text" for="fluency-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-5">
+      <label class="au-control-input__text" for="fluency-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-6">
+      <label class="au-control-input__text" for="fluency-6">Level 6</label>
+    </div>
+                         
+    <p><strong>Comprehension accuracy and including comprehension of linguistic and cultural subtleties</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex5" id="comprehension-4">
+      <label class="au-control-input__text" for="comprehension-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex5" id="comprehension-5">
+      <label class="au-control-input__text" for="comprehension-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex5" id="comprehension-6">
+      <label class="au-control-input__text" for="comprehension-6">Level 6</label>
+    </div>                         
+                         
+    <p><strong>Ease of interaction and appropriate response to verbal and non-verbal cues</strong></p><br>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-4">
+      <label class="au-control-input__text" for="verbal-4">Level 4</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-5">
+      <label class="au-control-input__text" for="verbal-5">Level 5</label>
+    </div>
+    <div class="au-control-input">
+      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-6">
+      <label class="au-control-input__text" for="verbal-6">Level 6</label>
+    </div>          
+                        
+                         
+                         <br><br><br>
+						 
 
-			 
-			 <br><br><br>
+
+
 				   
 				<div class="form-navigation">
 
-				<a class="au-btn" href="#">Add applicant</a>
+				<a class="au-btn" href="elp-applicant-added-single.html">Add applicant</a>
 					
 
 
