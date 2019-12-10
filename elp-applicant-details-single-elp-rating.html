@@ -5,27 +5,18 @@
       <title>myCASA</title>
       <meta name="viewport" content="width=device-width">
       <meta name="viewport" content="initial-scale=1">
-      <link rel="stylesheet" href="../mycasa-src/css/furnace.min.css">
-      <link rel="stylesheet" href="../mycasa-src/css/casa.css">
-	   
-	   <style>
-	   
-		   .casa-drone-instructions{display: none;}
-		   .casa-drone-instructions strong{font-weight:600;color:#000;}
-	   </style>
-	   
-      <script type="text/javascript" src="../mycasa-src/js/furnace.min.js"></script>
-      <script type="text/javascript" src="../mycasa-src/js/jquery.min.js"></script>
-      <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
-	   
-	  <script type="text/javascript" src="js/dji.js"></script>
-	  <script type="text/javascript" src="va.js"></script>  
-	         <script type="text/javascript">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
          /* page specific js */
          
 		  $( document ).ready(function() {
 
-			  			   $("#elprating").on('input', function() {
+			 $("#elprating").on('input', function() {
 			   	   
 			   		if($(this).val()=="gelpa"){
 			   			 $("#gelpass").css("display","block");
@@ -36,7 +27,8 @@
 					  $("#gelpass").css("display","none");
 						 
 					 }
-			   			   		if($(this).val()=="gelpn"){
+			   		
+                    if($(this).val()=="gelpn"){
 			   			 $("#gelpnot").css("display","block");
 						
 						
@@ -46,24 +38,27 @@
 						 
 					 }
 							   
-							   			   		if($(this).val()=="elp6"){
-			   			 $("#elp6ass").css("display","block");
-						
-						
-			   		 } else {
-					  
-					  $("#elp6ass").css("display","none");
-						 
-					 }
+				    
+                  if($(this).val()=="aelp"){
+			   			 $("#elp456").css("display","block");
+                  }
+					
+
 						   
 				});
 			   });
 	   
 	   </script>
-		 
-   </head>
-   <body class="live-demo au-body au-grid">
+		      <style type="text/css">
 
+      .au-control-input__text {
+        margin-right:0px !important;
+        margin-bottom:12px !important;
+      }
+
+      </style> 
+  </head>
+   <body class="live-demo au-body au-grid">
       <main class="au-grid">
          <div class="header">
             <div class="container">
@@ -72,7 +67,7 @@
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
-                  
+
                   	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
@@ -81,8 +76,8 @@
 						<p><a href="#">Switch profile</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
-                  
-                  
+
+
                   </div>
                </div></div>
             </div>
@@ -98,30 +93,30 @@
 			</div>
 		</div>
          <div class="container">
-
-			
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
-                     <li><a href="dashboard-bob.html">myCASA</a></li>
+                     <li><a href="index.html">myCASA</a></li>
                      <li>English language proficiency</li>
                   </ul>
                </nav>
-
+			 <div class="casa-section">
                <header class="au-header" role="banner">
                   <h1 class="break desktop au-header-heading">English language proficiency</h1>
-                  <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
                </header>
-			 			                  <div class="row">
-                     <div class="col-xs-12 col-md-12 col-lg-6"> 
+			 </div>
+
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
 
 		
 <h2>Applicant details</h2>
-							  <br>
-							  			 					<div class="casa-section">     
-                    <fieldset class="au-fieldset">
-                        <legend class="au-fieldset__legend">
+						 <br>
+							  			 					<div class="au-form-group">     
                             <h3 class="au-display-sm">What is the applicant's requirement for the English Language Proficiency notification?</h3>
-                        </legend>
+
 						
 					 <div class="au-callout">
                         <p>If the applicant's English Language Proficiency notification is required as part of an Air Traffic Controller licence, please complete <a href="https://www.casa.gov.au/sites/default/files/general-english-language-proficiency-notice-form-61-9gelp.pdf">form 61-9GELP</a> or <a href="https://www.casa.gov.au/sites/default/files/english-language-assessment-notice-form-61-9elp.pdf">form 61-9ELP</a>.</p>
@@ -129,6 +124,7 @@
 					
              
 						 </div>
+                        <div class="au-form-group">
                         <div class="au-control-input au-control-input--block">
                             <input class="au-control-input__input" type="radio" name="fcl-need"
                                        id="aroc-need" value="aroc">
@@ -140,49 +136,54 @@
                                        id="fcl-need" value="fcl">
                                 <label class="au-control-input__text" for="fcl-need">Flight Crew Licence</label>
                         </div>
-
+                        </div>
 
                         
-                    </fieldset>
+
                     </div>
-                         <br>
-			 
-				<label for="model-name-version" class="casa-label-guidance">Applicant family name</label>	
-				<input class="au-text-input au-text-input--block" name="text-input-block1" id="text-input-block1" type="text" value="">
-					
-			 <br>
-				<label for="model-name-version" class="casa-label-guidance">Applicant aviation reference number</label>	
-				<input class="au-text-input au-text-input--block" name="text-input-block2" id="text-input-block2" type="text" value="">			  
-			 	
-				 			<br>
-				 							  				<div class="date-entry">
-					<p class="casa-label-guidance">Date of assessment</p>
-				<div class="date date-day">
-					<label for="text-input-block1">Day</label>	
-					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block1" type="text" value="">
-				</div>	
-				<div class="date date-month">	
-					<label for="text-input-block2">Month</label>	
-					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block2" type="text" value="">
-					</div>
-				<div class="date date-year">
-					<label for="text-input-block3">Year</label>	
-					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block3" type="text" value="">
-								
-					</div>
-					<p class="date-guidance">For example, 31 01 2020</p>	
-				</div>
-				 <br>
+
+
+			 			<div class="au-form-group">
+                        <label class="au-label" for="">Applicant family name</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="applicant-family-name"/>
+          	</div>
+                    			<div class="au-form-group">
+                        <label class="au-label" for="">Applicant aviation reference number</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="applicant-arn"/>
+          	</div>
+                    
+									 <div class="au-form-group casa-inline-form-group"> 
+                       <fieldset class="au-fieldset">
+                            <legend class="au-fieldset__legend">
+                                <h3 class="au-display-sm">Date of assessment</h3>
+                                <span class="au-hint-text">For example, 31 01 2020</span>
+                            </legend>
+                            <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="dd">Date</label>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="mm">Month</label>
+                                <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="yyyy">Year</label>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                           </div>
+
+
+                        </fieldset>
+                    </div>	
 				 
 				 
-				 <div class="casa-section">	
+				 <div class="au-form-group">	
 					<div class="au-callout">
 						 <h4>Please note</h4>
-                        <p><strong>The applicant will be issued Aviation English language proficiency level 6</strong></p>	 
+                        <p>The applicant will be issued Aviation English language proficiency level 6</p>	 
                      </div>
 				</div>
 				 
-				 <p>Please ensure the student meets the following GELP assessment standards:
+                    <p><strong>Please ensure the student meets the following GELP assessment standards:</strong>
 							<ul>
 								<li>Pronunciation, ease of understanding</li>
 								<li>Grammatical structure and sentence patterns</li>
@@ -200,127 +201,12 @@
 				 
 				 				 
 				
-				<div id="gelpass" style="display:none;">
-					<br>				
-					<p>Please ensure the student meets the following GELP assessment standards:</p>
-							  
-			<br>
-				
-				 				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Pronunciation, ease of understanding</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Grammatical structure and sentence patterns</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Vocabulary and phraseologies</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Fluency, natural flow of speach, varied style for emphasis, appropriate marker usage</label>
-</div>
-				 <br><br>
-					 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Comprehension accuracy and including comprehension of linguistic and cultural subtleties</label>
-</div>
-		<br><br>				 
-				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Ease of interaction and appropriate response to verbal and non-verbal cues</label>
-</div>
-				 </div>
-				 
-				 				<div id="gelpnot" style="display:none;">
-					<br>				
-					<p>Please select at least one of following documents indicated below, that you have sighted as evidence that the student meets the general English language proficiency standards:</p>
-							  
-			<br>
-				
-				 				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Completed or still attending secondary school education in Australia/NZ or other country in English medium
-(supporting documentation example: confirmation letter from school)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Worked three of the last five years in Australia/NZ or specified country (supporting documentation example: letter of
-confirmation from employer, group certificates)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Met general English test criteria as outlined in CASR Part 61 Manual of Standard (IELTS, TOEIC-SP or TOEFL)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Sighted evidence they have completed a CASA approved General English language Training Course</label>
-</div>
-				 <br><br>
-					 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">A statutory declaration which states the applicant is unable to provide acceptable
-documentary evidence and includes details on how the applicant meets the education or work history standard.</label>
-</div>
-				 </div>
-				 
-				 				<div id="elp6ass" style="display:none;">
-					<br>				
-					<p>Please ensure the student meets the following aviation English language proficiency level 6 assessment standards:</p>
-							  
-			<br>
-				
-				 				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Pronunciation, ease of understanding</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Grammatical structure and sentence patterns</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Appropriate vocabulary and phraseologies</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Fluency, natural flow of speach, varied style for emphasis, appropriate marker usage</label>
-</div>
-				 <br><br>
-					 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Comprehension accuracy and including comprehension of linguistic and cultural subtleties</label>
-</div>
-		<br><br>				 
-				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Ease of interaction and appropriate response to verbal and non-verbal cues</label>
-</div>
-				 </div>
 
-			 
-			 <br><br><br>
-				   
-				<div class="form-navigation">
+				 
+   
+				<div class="au-form-group">
 
 				<a class="au-btn" href="#">Add applicant</a>
-					
-
-
-
-
-					
 
 				</div>
 				               <hr />
