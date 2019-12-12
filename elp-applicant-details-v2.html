@@ -13,32 +13,32 @@
 	  <script type="text/javascript" src="va.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
+
 		  $( document ).ready(function() {
 
 			 $("#elprating").on('input', function() {
-			   	   
+
 			   		if($(this).val()=="gelpa"){
 			   			 $("#gelpass").css("display","block");
-						
-						
+
+
 			   		 } else {
-					  
+
 					  $("#gelpass").css("display","none");
-						 
+
 					 }
-			   		
+
                     if($(this).val()=="gelpn"){
 			   			 $("#gelpnot").css("display","block");
-						
-						
+
+
 			   		 } else {
-					  
+
 					  $("#gelpnot").css("display","none");
-						 
+
 					 }
-							   
-				    
+
+
                   if($(this).val()=="aelp"){
 			   			 $("#elp456").css("display","block");
                 } else {
@@ -46,12 +46,12 @@
 					  $("#elp456").css("display","none");
 
 					 }
-					
 
-						   
+
+
 				});
 			   });
-	   
+
 	   </script>
 		      <style type="text/css">
 
@@ -60,7 +60,7 @@
         margin-bottom:12px !important;
       }
 
-      </style> 
+      </style>
   </head>
    <body class="live-demo au-body au-grid">
       <main class="au-grid">
@@ -115,18 +115,17 @@
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 
-		
+
 <h2>Applicant details</h2>
 						 <br>
-							  			 					<div class="au-form-group">     
+							  			 					<div class="au-form-group">
                             <h3 class="au-display-sm">What is the applicant's requirement for the English Language Proficiency notification?</h3>
 
-						
-					 <div class="au-callout">
-                        <p>If the applicant's English Language Proficiency notification is required as part of an Air Traffic Controller licence, please complete <a href="https://www.casa.gov.au/sites/default/files/general-english-language-proficiency-notice-form-61-9gelp.pdf">form 61-9GELP</a> or <a href="https://www.casa.gov.au/sites/default/files/english-language-assessment-notice-form-61-9elp.pdf">form 61-9ELP</a>.</p>
-                      
-					
-             
+
+					 <div class="au-callout"> <p>If the applicant's English Language Proficiency notification is required as part of an Air Traffic Controller licence, please complete <a href="https://www.casa.gov.au/standard-page/application-forms">the English Language Proficiency form on the CASA website</a>.</p>
+
+
+
 						 </div>
                         <div class="au-form-group">
                         <div class="au-control-input au-control-input--block">
@@ -134,7 +133,7 @@
                                        id="aroc-need" value="aroc">
                                 <label class="au-control-input__text" for="aroc-need">Aeronautical Radio Operator Certificate</label>
                         </div>
-                        
+
                         <div class="au-control-input au-control-input--block">
                             <input class="au-control-input__input" type="radio" name="fcl-need"
                                        id="fcl-need" value="fcl">
@@ -142,7 +141,7 @@
                         </div>
                         </div>
 
-                        
+
 
                     </div>
 
@@ -155,131 +154,142 @@
                         <label class="au-label" for="">Applicant aviation reference number</label>
                         <input type="text" class="au-text-input au-text-input--block" id="applicant-arn"/>
           	</div>
-                    
-									 <div class="au-form-group casa-inline-form-group"> 
+
+									 <div class="au-form-group casa-inline-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
                                 <h3 class="au-display-sm">Date of assessment</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
-                            <div class="au-form-group casa-inline-form-subgroup">  
+                            <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="dd">Date</label>
                                 <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
                            </div>
-                           <div class="au-form-group casa-inline-form-subgroup">  
+                           <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="mm">Month</label>
                                 <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
                            </div>
-                           <div class="au-form-group casa-inline-form-subgroup">  
+                           <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="yyyy">Year</label>
                                 <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
                            </div>
 
 
                         </fieldset>
-                    </div>		  
-			 	
-                    <div class="au-form-group">       
+                    </div>
+
+                    <div class="au-form-group">
                     <label for="" class="au-label">Please select one of the following English language proficiency ratings</label>
                         <select id="elprating" class="au-select au-select--block">
-                          <option value="0">Please select</option>						
+                          <option value="0">Please select</option>
 
   					<option value="gelpn">General English language proficiency notice</option>
   					<option value="gelpa">General English language proficiency assessment</option>
 
   					<option value="aelp">Aviation English language proficiency</option>
-                        </select>    
+                        </select>
                     </div>
 
-				 
 
-                
-                         
 
-                         
-                         
-                         
-				 
-				 				 
-				
-				<div id="gelpass" style="display:none;">
-					<br>				
-                    <p><strong>Please ensure the student meets the following GELP assessment standards:</strong></p>
-							  
-			<br>
-				
-				 				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Pronunciation, ease of understanding</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Grammatical structure and sentence patterns</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Vocabulary and phraseologies</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Fluency, natural flow of speach, varied style for emphasis, appropriate marker usage</label>
-</div>
-				 <br><br>
-					 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Comprehension accuracy and including comprehension of linguistic and cultural subtleties</label>
-</div>
-		<br><br>				 
-				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Ease of interaction and appropriate response to verbal and non-verbal cues</label>
-</div>
-				 </div>
-				 
-				 				<div id="gelpnot" style="display:none;">
-					<br>				
-					<p><strong>Please select at least one of following documents indicated below, that you have sighted as evidence that the student meets the general English language proficiency standards:</strong></p>
-							  
-			<br>
-				
-				 				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Completed or still attending secondary school education in Australia/NZ or other country in English medium
-(supporting documentation example: confirmation letter from school)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Worked three of the last five years in Australia/NZ or specified country (supporting documentation example: letter of
-confirmation from employer, group certificates)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Met general English test criteria as outlined in CASR Part 61 Manual of Standard (IELTS, TOEIC-SP or TOEFL)</label>
-</div>
-				 <br><br>
-				 				 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">Sighted evidence they have completed a CASA approved General English language Training Course</label>
-</div>
-				 <br><br>
-					 <div class="au-control-input">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-  <label class="au-control-input__text">A statutory declaration which states the applicant is unable to provide acceptable
-documentary evidence and includes details on how the applicant meets the education or work history standard.</label>
-</div>
-				 </div>
-                         
-                         
-                         
-                         
-                
-						
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    				<div id="gelpass" style="display:none;">
+                    					<br>
+                                        <p><strong>The person is able to demonstrate her or his ability to do the following:</strong></p>
+
+                    			<br>
+
+                    				 				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa1">
+                      <label class="au-control-input__text" for="gelpa1">Pronounce words clearly, using an accent that does not cause difficulties in understanding</label>
+                    </div>
+                    				 <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa2">
+                      <label class="au-control-input__text" for="gelpa2">Convey information in clearly structured sentences without confusion or ambiguity</label>
+                    </div>
+                    <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa3">
+                      <label class="au-control-input__text" for="gelpa3">Use an extensive vocabulary to accurately communicate on general and technical topics, without excessive use of jargon, slang or colloquial language</label>
+                    </div>
+                    <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa4">
+                      <label class="au-control-input__text" for="gelpa4">Speak fluently without long pauses, repetition or excessive false starts</label>
+                    </div>
+                    <br>
+                    					 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa5">
+                      <label class="au-control-input__text" for="gelpa5">Respond to communications with actions that demonstrate that the information has been received and understood</label>
+                    </div>
+                    <br>
+                    				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa6">
+                      <label class="au-control-input__text" for="gelpa6">Exchange information clearly in a variety of situations with both expert and non-expert English speakers while giving and receiving timely and appropriate responses</label>
+                    </div>
+                    <br>
+                         <div class="au-control-input">
+                    <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelpa7">
+                    <label class="au-control-input__text" for="gelpa7">Use appropriate techniques such as questioning, non-verbal communication and paraphrasing to validate communications</label>
+                    </div>
+                    				 </div>
+
+                    				 				<div id="gelpnot" style="display:none;">
+                    					<br>
+                    					<p><strong>Select at least one of following documents indicated below, that you have sighted as evidence that the student meets the general English language proficiency standards:</strong></p>
+
+                    			<br>
+
+                    				 				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelp1">
+                      <label class="au-control-input__text" for="gelp1">Has completed or is still attending a course of secondary education in Australia or New Zealand or an equivalent course in another country where the principle medium of instruction was English (supporting documentation, e.g. confirmation letter from school or certificate of graduation)
+                    </label>
+                    </div>
+                    				 <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelp2">
+                      <label class="au-control-input__text" for="gelp2">Has worked in Australia, New Zealand, United Kingdom, Republic of Ireland, USA or Canada for at least three of the last five years (supporting documentation, e.g. letter of confirmation from employer, group certificates, etc.)
+                    </label>
+                    </div>
+                    				 <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelp3">
+                      <label class="au-control-input__text" for="gelp3">Satisfied the general English proficiency test criteria specified in CASR Part 61 MOS, Schedule 2, Section 1, clause 5.1.2 (f) (IELTS, TOEIC-SP, TOEFL, etc.)</label>
+                    </div>
+                    				 <br>
+                    				 				 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelp4">
+                      <label class="au-control-input__text" for="gelp4">Sighted evidence they have completed a CASA approved General English Language training course</label>
+                    </div>
+                    				 <br>
+                    					 <div class="au-control-input">
+                      <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="gelp5">
+                      <label class="au-control-input__text" for="gelp5">A statutory declaration which states the applicant is unable to provide acceptable documentary evidence and includes details on how the applicant meets the education or work requirements</label>
+                    </div>
+                    				 </div>
+
+
+
+
+
+
+
+
+
+
       <div id="elp456" style="display: none">
           <div class="au-form-group">
                     <div class="au-table__wrapper">
@@ -424,39 +434,43 @@ documentary evidence and includes details on how the applicant meets the educati
         </tbody>
     </table>
 </div>
-              
+
 					 <div class="au-callout">
-                         <h4>Please note</h4>
-                        <p>The applicant will be issued the lowest Aviation English language proficiency rating based on the selections made for each of the assessment categories.<br><br>
-                         <strong>ELP X</strong></p>
-                      
-					
-             
-						 </div>              
-              
-</div>    
+
+             <p>The applicant will be issued with the ELP assessment level corresponding to the lowest of these scores.</p>
+             <ul>
+                <li>If the lowest score is 4, they will be awarded an ELP Level 4, valid for a period of 3 years only</li>
+                <li>If the lowest score is 5, they will be awarded an ELP Level 5, valid for a period of 6 years only</li>
+                <li>If the lowest score is 6, they will be awarded an ELP Level 6, valid permanently, i.e. it does not need to be renewed</li>
+            </ul>
+
+            <p>Level to be issued: <strong>Level X</strong></p>
+
+						 </div>
+
+</div>
                     </div>
-						 
 
 
 
-				   
+
+
 				<div class="au-form-group">
 
 				<a class="au-btn" href="elp-applicant-added-single.html">Add applicant</a>
-					
 
 
 
 
-					
+
+
 
 				</div>
 				               <hr />
             <a href="arn-saved.html" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
-				   
+            </a>
+
             </div>
 			 </div>
 			 </div>
@@ -464,7 +478,7 @@ documentary evidence and includes details on how the applicant meets the educati
 
 
           <div class="footer">
-           
+
             <div class="footer-wrapper">
                <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
