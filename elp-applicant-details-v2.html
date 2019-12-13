@@ -48,6 +48,24 @@
 					 }
 
 
+           var lowestVal=6;
+
+           $( "#elp456 input" ).change(function() {
+             thisVal=$(this).val();
+             if(thisVal<lowestVal){
+                lowestVal=thisVal;
+             }
+
+
+               $( "#elp456 input" ).change(function() {
+
+               });
+
+              $("#level-issued").css("display","block");
+              $("#level-issued strong").html("Level "+lowestVal);
+
+ });
+
 
 				});
 			   });
@@ -306,19 +324,19 @@
             <tr class="au-table__row">
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-4" value="4">
                       <label class="au-control-input__text" for="pronunciation-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-5" value="5">
                       <label class="au-control-input__text" for="pronunciation-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex1" id="pronunciation-6" value="6">
                       <label class="au-control-input__text" for="pronunciation-6"></label>
                     </div>
                 </td>
@@ -329,19 +347,19 @@
             <tr class="au-table__row">
                                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-4" value="4">
                       <label class="au-control-input__text" for="grammatical-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-5" value="5">
                       <label class="au-control-input__text" for="grammatical-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex2" id="grammatical-6" value="6">
                       <label class="au-control-input__text" for="grammatical-6"></label>
                     </div>
                 </td>
@@ -350,19 +368,19 @@
             <tr class="au-table__row">
                                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-4" value="4">
                       <label class="au-control-input__text" for="vocabulary-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-5" value="5">
                       <label class="au-control-input__text" for="vocabulary-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex3" id="vocabulary-6" value="6">
                       <label class="au-control-input__text" for="vocabulary-6"></label>
                     </div>
                 </td>
@@ -371,19 +389,19 @@
             <tr class="au-table__row">
                                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-4" value="4">
                       <label class="au-control-input__text" for="fluency-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-5" value="5">
                       <label class="au-control-input__text" for="fluency-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex4" id="fluency-6" value="6">
                       <label class="au-control-input__text" for="fluency-6"></label>
                     </div>
                 </td>
@@ -392,19 +410,19 @@
             <tr class="au-table__row">
                                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-4" value="4">
                       <label class="au-control-input__text" for="lingustic-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-5" value="5">
                       <label class="au-control-input__text" for="lingustic-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex5" id="lingustic-6" value="6">
                       <label class="au-control-input__text" for="lingustic-6"></label>
                     </div>
                 </td>
@@ -413,19 +431,19 @@
             <tr class="au-table__row">
                                <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-4">
+                      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-4" value="4">
                       <label class="au-control-input__text" for="verbal-4"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-5">
+                      <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-5" value="5">
                       <label class="au-control-input__text" for="verbal-5"></label>
                     </div>
                 </td>
                 <td class="au-table__cell">
                     <div class="au-control-input">
-                    <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-6">
+                    <input class="au-control-input__input" type="radio" name="radio-ex6" id="verbal-6" value="6">
                       <label class="au-control-input__text" for="verbal-6"></label>
                     </div>
                 </td>
@@ -444,7 +462,7 @@
                 <li>If the lowest score is 6, they will be awarded an ELP Level 6, valid permanently, i.e. it does not need to be renewed</li>
             </ul>
 
-            <p>Level to be issued: <strong>Level X</strong></p>
+            <p style="display:none;" id="level-issued">Level to be issued: <strong>Level 4</strong></p>
 
 						 </div>
 
